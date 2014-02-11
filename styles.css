@@ -6,3 +6,27 @@ body {
 	padding:0;
 	height: 100%;
 }
+
+#hoofdmenu {
+	position: relative;
+	display: block;
+	background-color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 100px
+}
+
+#hoofdmenu a {
+	text-decoration: none;
+	font-family: 'Calibri', sans-serif;
+	font-weight: 600;
+	color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-top 20px;
+	padding-bottom: 20px;
+}
+
+#hoofdmenu a:hover {
+	color: grey;
+}
