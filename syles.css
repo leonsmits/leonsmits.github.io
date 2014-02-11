@@ -1,0 +1,8 @@
+body {
+	overflow-x: hidden;
+	width: 100%;
+	background-image: url(bkgr.jpg);
+	margin:0;
+	padding:0;
+	height: 100%;
+}
