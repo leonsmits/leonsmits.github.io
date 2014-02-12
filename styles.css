@@ -55,6 +55,38 @@ body {
 	border: 3px solid grey;
 	z-index: 1;
 }
+
+#content1 a {
+	display: inline-block;
+	padding: 2px 30px 2px 30px;
+	margin-bottom: 10px;
+	background-color: grey;
+	border: 2px solid black;
+	text-decoration: none;
+	color: black;
+	outline: none;
+}
+
+#content1 a:hover{
+	display: inline-block;
+	padding: 2px 30px 2px 30px;
+	margin-bottom: 10px;
+	background-color: white;
+	border: 2px solid grey;
+	text-decoration: none;
+	color: grey;
+	outline: none;
+}
+
+#content a {
+	color: black;
+	outline: none;
+}
+#content a:hover {
+	color: grey;
+	outline: none;
+}
+
 #aboutimg {
 	position:absolute;
 	top:0;
@@ -79,3 +111,4 @@ body {
 	overflow: hidden;
 	height: 203px;
 }
+
