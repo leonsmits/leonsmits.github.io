@@ -38,6 +38,13 @@ body {
 	left: 0px;
 }
 
+#tekstje {
+	position: relative;
+	top: -250px;
+	left: 180px;
+	width: 600px;
+	height: 0px;
+	}
 #content {
 	font-family: "Calibri", sans-serif;
 	position: relative;
