@@ -41,12 +41,10 @@ body {
 	left: 0px;
 }
 
-#tekstje {
+#tekst {
 	position: relative;
-	top: -250px;
-	left: 180px;
-	width: 600px;
-	height: 0px;
+	margin: auto;
+	width: 700px;
 	}
 #content {
 	font-family: "Calibri", sans-serif;
