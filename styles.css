@@ -61,6 +61,12 @@ body {
 	z-index:1
 }
 
+#fototjes {
+	position: relative;
+	width: 600px;
+	height: 230px;
+}
+
 #content h2 {
 	font-size: 200%;
 	color: white;
