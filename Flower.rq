@@ -1,0 +1,43 @@
+#endpoint: http://dbpedia.org/sparql
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dbpc: <http://dbpedia.org/resource/classes#>
+PREFIX dbp-ont: <http://dbpedia.org/ontology/>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX rsc: <http://rdf.freebase.com/ns/zoos.zoo.memberships>
+PREFIX swz: <http://www.swzooproject.org/vu-group-10/>
+PREFIX rs: <http://spektrum.ctu.cz/ontologies/radio-spectrum#>
+PREFIX fb: <http://rdf.freebase.com/ns/>
+PREFIX http: <http://www.w3.org/2011/http#>
+PREFIX dbp-prop: <http://dbpedia.org/property/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX db: <http://dbpedia.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sw: <http://linkedwidgets.org/statisticalwidget/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+
+
+CONSTRUCT { 
+  ?Flowers a swz:Flowers; 
+    dbo:division ?Division ;
+    dbo:family ?Family ;
+    dbo:genus ?Genus ;
+    dbo:thumbnail ?Thumbnail;
+    dbp:name ?Name;
+    rdfs:comment ?Comment;
+    rdfs:label ?label .
+}
+WHERE {
+  ?Flowers dbo:division dbr:Flowering_plant ;
+       dbo:division ?Division ;
+       dbo:family ?Family ;
+       dbo:genus ?Genus ;
+       dbo:thumbnail ?Thumbnail;
+       dbp:name ?Name;
+       rdfs:comment ?Comment;
+       rdfs:label ?label .
+}

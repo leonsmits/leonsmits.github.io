@@ -1,0 +1,28 @@
+#endpoint: http://www.swzooproject.org/vu-group-10/
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX swz: <http://www.swzooproject.org/vu-group-10/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbr: <http://dbpedia.org/resource/>
+
+Construct {
+  ?AnimalSpecie a dbo:Insect;
+    rdfs:label ?label;
+    dbo:abstract ?abstract.
+
+}
+  
+WHERE {
+  ?AnimalSpecie dbo:class dbr:Insect ;
+      rdfs:label ?label;
+  	dbo:abstract ?abstract.
+
+  FILTER (lang(?label) = 'nl')
+  FILTER (lang(?abstract) = 'nl')
+}
+
+
+  
+  
