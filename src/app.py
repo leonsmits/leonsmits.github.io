@@ -6,7 +6,7 @@ import traceback
 
 app = Flask(__name__)
 
-TUTORIAL_REPOSITORY = 'https://github.com/leonsmits/leonsmits.github.io'
+TUTORIAL_REPOSITORY = 'leonsmits.github.io/src/'
 
 @app.route('/')
 def first_page():
