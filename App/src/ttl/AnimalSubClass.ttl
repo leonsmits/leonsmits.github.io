@@ -1,0 +1,93 @@
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+@prefix ns2:	<http://www.swzooproject.org/vu-group-10/> .
+dbo:Amphibian	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"anfibio"@it ,
+		"anf\u00EDbio"@pt ,
+		"amphibian"@en ,
+		"amfaibiach"@ga ,
+		"\uC591\uC11C\uB958"@ko ,
+		"anfibio"@gl ,
+		"Amphibie"@de ,
+		"\u4E21\u751F\u985E"@ja ,
+		"amphibien"@fr ,
+		"\u03B1\u03BC\u03C6\u03AF\u03B2\u03B9\u03BF"@el ,
+		"amfibie"@nl .
+dbo:Arachnid	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"arachnides"@fr ,
+		"Spinnentier"@de ,
+		"aracnide"@it ,
+		"arachnid"@en ,
+		"\u30AF\u30E2\u7DB1"@ja ,
+		"\u03B1\u03C1\u03B1\u03C7\u03BD\u03BF\u03B5\u03B9\u03B4\u03AD\u03C2"@el ,
+		"spinachtigen"@nl ,
+		"aracn\u00EDdeos"@pt ,
+		"ar\u00E1cnido"@es ,
+		"\uAC70\uBBF8\uAC15"@ko ,
+		"araicnid"@ga .
+dbo:Bird	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"\u00E9an"@ga ,
+		"Vogel"@de ,
+		"vogel"@nl ,
+		"bird"@en ,
+		"\u03C0\u03C4\u03B7\u03BD\u03CC"@el ,
+		"\u9CE5\u985E"@ja ,
+		"uccello"@it ,
+		"p\u00E1jaro"@es ,
+		"oiseau"@fr ,
+		"\uC0C8"@ko .
+dbo:Crustacean	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"schaaldier"@nl ,
+		"cr\u00FAstach"@ga ,
+		"Krebstier"@de ,
+		"\u03B1\u03C3\u03C4\u03C1\u03B1\u03BA\u03CC\u03B4\u03B5\u03C1\u03BC\u03BF"@el ,
+		"\uAC11\uAC01\uB958"@ko ,
+		"crustacean"@en ,
+		"\u7532\u6BBB\u985E"@ja ,
+		"crustac\u00E9s"@fr .
+dbo:Fish	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"\u9B5A\u985E"@ja ,
+		"\u03C8\u03AC\u03C1\u03B9"@el ,
+		"poisson"@fr ,
+		"Fisch"@de ,
+		"vis"@nl ,
+		"fish"@en ,
+		"iasc"@ga ,
+		"pescado"@es ,
+		"peixe"@pt .
+dbo:Insect	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"feithid"@ga ,
+		"\u03AD\u03BD\u03C4\u03BF\u03BC\u03BF"@el ,
+		"\u6606\u866B"@ja ,
+		"insecto"@es ,
+		"insect"@nl ,
+		"Insekt"@de ,
+		"insecte"@fr ,
+		"insect"@en .
+dbo:Mammal	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"mammal"@en ,
+		"s\u00E4ugetier"@de ,
+		"\u03B8\u03B7\u03BB\u03B1\u03C3\u03C4\u03B9\u03BA\u03CC \u03B6\u03CE\u03BF"@el ,
+		"mam\u00EDfero"@pt ,
+		"ssak"@pl ,
+		"mamach"@ga ,
+		"mammif\u00E8re"@fr ,
+		"zoogdier"@nl ,
+		"mam\u00EDfero"@es ,
+		"\u54FA\u4E73\u985E"@ja ,
+		"mammifero"@it .
+dbo:Mollusca	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"\u03BC\u03B1\u03BB\u03AC\u03BA\u03B9\u03B1"@el ,
+		"mollusque"@fr ,
+		"weekdier"@nl ,
+		"\u8EDF\u4F53\u52D5\u7269"@ja ,
+		"Weichtiere"@de ,
+		"mollusca"@en .
+dbo:Reptile	rdfs:subClassOf	ns2:Animal ;
+	rdfs:label	"\u03B5\u03C1\u03C0\u03B5\u03C4\u03CC"@el ,
+		"reipt\u00EDl"@ga ,
+		"reptile"@en ,
+		"\u722C\u866B\u985E"@ja ,
+		"reptile"@fr ,
+		"reptiel"@nl ,
+		"reptil"@de .
