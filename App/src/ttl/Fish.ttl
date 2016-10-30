@@ -1,7 +1,0 @@
-@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dbr:	<http://dbpedia.org/resource/> .
-@prefix dbo:	<http://dbpedia.org/ontology/> .
-dbr:Hippichthys_cyanospilos	rdf:type	dbo:Fish .
-@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
-dbr:Hippichthys_cyanospilos	rdfs:label	"Hippichthys cyanospilos"@nl ;
-	dbo:abstract	"Hippichthys cyanospilos is een  straalvinnige vissensoort uit de familie van zeenaalden en zeepaardjes (Syngnathidae). De wetenschappelijke naam van de soort is voor het eerst geldig gepubliceerd in 1854 door Bleeker."@nl .

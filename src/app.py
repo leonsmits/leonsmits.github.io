@@ -1,14 +1,12 @@
 from flask import Flask, render_template, url_for, request, jsonify
 from SPARQLWrapper import SPARQLWrapper, RDF, JSON
-import rdflib
 import requests
 import traceback
 
-#leonsmits.github.io
 
 app = Flask(__name__)
 
-REPOSITORY = 'http://leonsmits.github.io/Zoo_new.ttl'
+TUTORIAL_REPOSITORY = 'http://localhost:5820/zootology'
 
 @app.route('/')
 def first_page():

@@ -1,15 +1,12 @@
 from flask import Flask, render_template, url_for, request, jsonify
-from SPARQLWrapper import SPARQLWrapper, RDF, JSON, N3
-import rdflib
+from SPARQLWrapper import SPARQLWrapper, RDF, JSON
 import requests
 import traceback
 
-#leonsmits.github.io
-#http://localhost:5820/zootology#!/webconsole
 
 app = Flask(__name__)
 
-REPOSITORY = 'http://localhost:5820/zootology'
+TUTORIAL_REPOSITORY = 'http://localhost:5820/zootology'
 
 @app.route('/')
 def first_page():
@@ -33,12 +30,11 @@ def sparql():
 
     endpoint = request.args.get('endpoint', None)
     query = request.args.get('query', None)
-    descriptive = request.args.get('descriptive', None)
 
     return_format = request.args.get('format','JSON')
 
 
-    if endpoint and query and descriptive:
+    if endpoint and query :
         sparql = SPARQLWrapper(endpoint)
 
         sparql.setQuery(query)
@@ -52,8 +48,6 @@ def sparql():
         sparql.addParameter('reasoning','true')
 
         app.logger.debug('Query:\n{}'.format(query))
-
-        app.logger.debug('Query:\n{}'.format(descriptive))
 
         app.logger.debug('Querying endpoint {}'.format(endpoint))
 
@@ -90,7 +84,7 @@ def store():
 
 
 
-    transaction_begin_url = REPOSITORY + "/transaction/begin"
+    transaction_begin_url = TUTORIAL_REPOSITORY + "/transaction/begin"
     app.logger.debug('Doing a POST of your data to {}'.format(transaction_begin_url))
 
     # Start the transaction, and get a transaction_id
@@ -99,7 +93,7 @@ def store():
     app.logger.debug(response.status_code)
 
     # POST the data to the transaction
-    post_url = REPOSITORY + "/" + transaction_id + "/add"
+    post_url = TUTORIAL_REPOSITORY + "/" + transaction_id + "/add"
     app.logger.debug('Assuming your data is Turtle!!')
     response = requests.post(post_url, data=data, headers={'Accept': 'text/plain', 'Content-type': 'text/turtle'})
     app.logger.debug(response.status_code)
@@ -111,7 +105,7 @@ def store():
 
 
     # Close the transaction
-    transaction_close_url = REPOSITORY + "/transaction/commit/" + transaction_id
+    transaction_close_url = TUTORIAL_REPOSITORY + "/transaction/commit/" + transaction_id
     response = requests.post(transaction_close_url)
     app.logger.debug(response.status_code)
     app.logger.debug(response.content)

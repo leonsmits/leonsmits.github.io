@@ -24,6 +24,13 @@ $('#link1').on('click', function(e){
 	$('body').append(bootstrapCSSLink);
 	$('body').append(bootstrapThemeCSSLink);
 	$('body').append(bootstrapJavaScriptLink);
+});
+
+/*
+// ############
+//    STEP 2
+// ############
+*/
 
 
 // No JavaScript involved!
