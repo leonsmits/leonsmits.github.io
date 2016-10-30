@@ -1,5 +1,5 @@
 
-var TUTORIAL_REPOSITORY = 'https://github.com/leonsmits/leonsmits.github.io';
+var TUTORIAL_REPOSITORY = 'leonsmits.github.io/src/';
 
 
 
