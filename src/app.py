@@ -6,7 +6,9 @@ import traceback
 
 app = Flask(__name__)
 
+
 TUTORIAL_REPOSITORY = 'http://localhost:5820/zootology'
+
 
 @app.route('/')
 def first_page():
