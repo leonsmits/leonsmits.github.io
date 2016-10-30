@@ -1,5 +1,5 @@
 
-var TUTORIAL_REPOSITORY = 'http://leonsmits.github.io/';
+var TUTORIAL_REPOSITORY = 'http://localhost:5820/zootology';
 
 
 
